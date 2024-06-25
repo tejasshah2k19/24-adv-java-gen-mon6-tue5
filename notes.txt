@@ -1,0 +1,105 @@
+Servlet 
+
+Jsp 
+-------------------------
+
+
+src->main->java
+
+	com->google 
+		1) controller
+		2) bean
+		3) dao
+		4) util 
+		 
+		  
+
+---------------------------
+
+Servlet -> server side -> request -> process -> response
+
+
+->class 
+->where -> controller -> com folder -> 
+
+
+webapplication -> form -> submit ->request -> server
+		process -> response 
+		
+		
+		client:request - server:response 
+	
+servlet->
+	1) class extends HttpServlet
+	2) override service : public void service(HttpServletRequest request,HttpServletRepsonse response)		
+	3)
+thread->class extends Thread 
+exception=>class extends Exception 
+ ?where? 
+ 	java -> com -> controller {logic} 
+
+-----------------------------------------------
+
+adv java -> project -> jar ? 
+
+
+tomcat -> lib -> servlet-api.jar 
+
+html -> form -> 
+
+	method => GET  => data -> URL -> 
+	method => POST {hidden} 
+	
+	PrintWriter out = response.getWriter();
+	response.setContentType("text/html");
+	
+	out.print("");
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
