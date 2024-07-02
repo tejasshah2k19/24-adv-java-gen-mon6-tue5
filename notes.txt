@@ -71,11 +71,21 @@ html -> form ->
 
 
 
+1)extends HttpServlet 
+2)service -> HttpServletRequest,HttpServletResponse 
+3)@WebServlet => @WebServlet("/SignupServlet") 
 
 
+form->submit->servlet->request->
+read -> getParameter()
+
+request.getParameter("parameterName"); 
+ 
 
 
-
+response.setContentType("text/html");
+PrintWriter out = response.getWriter();
+out.print("===>");
 
 
 
