@@ -88,6 +88,48 @@ PrintWriter out = response.getWriter();
 out.print("===>");
 
 
+------------------------------------------
+
+
+
+_______ class we need to extends for servlet ? 
+HttpServlet 
+
+__________ and _________ are the argument of a service method ? 
+HttpServletRequest 	
+HttpServletResponse 
+
+
+__________ method is responsible to write logic in servlet ? 
+service
+
+
+_______________ annotation is used to map servlet with an url ?
+@WebServlet 
+
+
+
+_____________ and ___________ exceptions are used in service method?
+IOException		ServletException 
+
+
+
+____________ class is responsible for response {browser output }?
+PrintWriter
+
+
+______________ method will help you to set content type for response? 
+ setContentType()
+
+
+--------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 

@@ -14,24 +14,35 @@ public class CalcServlet extends HttpServlet {
 
 	public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		int n1 = Integer.parseInt(request.getParameter("n1"));
-		int n2 = Integer.parseInt(request.getParameter("n2"));
-		String operation = request.getParameter("operation");// +
-		int ans = 0;
+		String n1 = request.getParameter("n1");
+		String n2 = request.getParameter("n2");
+		String operation = request.getParameter("operation");// + - * div
 
-		if (operation.equals("+")) {
-			ans = n1 + n2;
-		} else if (operation.equals("-")) {
-			ans = n1 - n2;
-		} else if (operation.equals("*")) {
-			ans = n1 * n2;
-		} else if (operation.equals("div")) {
-			ans = n1 / n2;
+		if (n1 == null || n2 == null || operation == null) {
+			response.setContentType("text/html");
+			PrintWriter out = response.getWriter();
+			out.print("Please Select all the fields...");
+		} else {
+			// code
+			Integer x = Integer.parseInt(n1);
+			Integer y = Integer.parseInt(n2);
+
+			int ans = 0;
+
+			if (operation.equals("+")) {
+				ans = x + y;
+			} else if (operation.equals("-")) {
+				ans = x - y;
+			} else if (operation.equals("*")) {
+				ans = x * y;
+			} else if (operation.equals("div")) {
+				ans = x / y;
+			}
+			response.setContentType("text/html");
+			PrintWriter out = response.getWriter();
+			out.print("ans = " + ans);
 		}
 
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.print("ans = " + ans);
 	}
 
 }
