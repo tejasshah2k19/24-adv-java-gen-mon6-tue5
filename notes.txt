@@ -123,10 +123,18 @@ ______________ method will help you to set content type for response?
 
 
 --------------------------------------------------------------
+input:text
+""
+
+"   "
+
+input:radio
+null
 
 
+blank and null -> 
 
-
+ 
 
 
 

@@ -18,10 +18,29 @@ public class CalcServlet extends HttpServlet {
 		String n2 = request.getParameter("n2");
 		String operation = request.getParameter("operation");// + - * div
 
-		if (n1 == null || n2 == null || operation == null) {
+		boolean isError = false; // no error
+		String error = "";// blank
+
+		if (n1 == null || n1.trim().length() == 0) {
+			isError = true;
+			error = "Please Enter Number1<br>";
+		}
+
+		if (n2 == null || n2.trim().length() == 0) {
+			isError = true;
+			error += "Please Enter Number2<br>";
+		}
+
+		if (operation == null) {
+			isError = true;
+			error += "Please Select Operation<br>";
+		}
+
+		if (isError) {
 			response.setContentType("text/html");
 			PrintWriter out = response.getWriter();
-			out.print("Please Select all the fields...");
+			out.print(error);
+
 		} else {
 			// code
 			Integer x = Integer.parseInt(n1);
@@ -41,6 +60,7 @@ public class CalcServlet extends HttpServlet {
 			response.setContentType("text/html");
 			PrintWriter out = response.getWriter();
 			out.print("ans = " + ans);
+
 		}
 
 	}
