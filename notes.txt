@@ -136,15 +136,23 @@ blank and null ->
 
 -----------------------------------------------------------------------
 
-collection -> ArrayList 
+JSP -> java server pages 
+	   java servlet pages 
+	   
+	   
+	   jsp -> HTML + Java 
+	   
+Jsp:Servlet 
 
 
+	jsp -> html? java? 
+	
 
+default -> jsp -> consider -> HTML 
 
-
-
-
-
+java code scriptlet ->    <%  %> 
+java print expression ->  <%= %>
+declaration ----> <%!  %> 
 
 
 
