@@ -154,6 +154,8 @@ java code scriptlet ->    <%  %>
 java print expression ->  <%= %>
 declaration ----> <%!  %> 
 
+-------------------------------------------------------------------------------
+HTML -> jsp -> 
 
 
 
