@@ -17,6 +17,9 @@ public class BoxCricketRegistrationServlet extends HttpServlet {
 		String studentName = request.getParameter("studentName");
 		String playerType = request.getParameter("playerType");
 
+		request.setAttribute("studentNameValue", studentName);
+		request.setAttribute("playerTypeValue", playerType);
+
 		// required
 
 		boolean isError = false; // no error
@@ -37,6 +40,7 @@ public class BoxCricketRegistrationServlet extends HttpServlet {
 			}
 
 		}
+
 		if (playerType == null || playerType.trim().length() == 0) {
 			isError = true;
 			request.setAttribute("playerTypeError", "Please Select Player Type");
