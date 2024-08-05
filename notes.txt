@@ -160,6 +160,55 @@ HTML -> jsp ->
 ------------------------------------------------------------------------------
 
 
+Filter 
+->pre process the request -> 
+
+
+1) class implements Filter 
+2) init doFilter:logic destroy 
+3) @WebFilter("/")
+
+
+
+
+EmployeeRegistration.jsp 
+	
+		FirstName : 
+		Email :
+		Password : 
+		BirthYear : 2010
+						submit
+		
+		
+EmployeeRegistrationFilter 		
+		
+		
+						
+EmployeeRegistrationServlet 
+	db 
+	EmployeeLogin.jsp 
+	  
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
