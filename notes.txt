@@ -188,6 +188,19 @@ EmployeeRegistrationServlet
 	db 
 	EmployeeLogin.jsp 
 	  
+----------------------------------------------------------------------
+
+
+pre process -> filter
+
+validation 
+ip
+country 
+encrpytion
+token 
+header 
+
+-------------------------------------------------------------------------
 		
 
 
