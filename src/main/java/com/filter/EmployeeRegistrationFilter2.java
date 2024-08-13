@@ -14,12 +14,13 @@ import javax.servlet.annotation.WebFilter;
 public class EmployeeRegistrationFilter2 implements Filter {
 
 	public void init(FilterConfig arg0) throws ServletException {
+		System.out.println("EmployeeRegistrationFilter2::init()");
 
 	}
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		System.out.println("EmployeeRegistrationFilter2");
+		System.out.println("EmployeeRegistrationFilter2::doFilter");
 		String firstName = request.getParameter("firstName");
 
 		// firstName => a-z A-Z -> regex
@@ -41,6 +42,7 @@ public class EmployeeRegistrationFilter2 implements Filter {
 	}
 
 	public void destroy() {
+		System.out.println("EmployeeRegistrationFilter2::destroy()");
 
 	}
 }

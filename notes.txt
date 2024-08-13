@@ -210,6 +210,116 @@ serlvet life cycle ->
 -------------------------------------------------------------------------
 
 		
+init()->1 
+service()->N 
+destroy()->1
+
+
+1) load class 
+2) create instance 
+3) init 
+4) service
+5) destroy 
+
+------------------------------------------------------------------
+
+filter -> 
+	init 
+	doFilter
+	destroy 
+	
+	
+	servlet					vs				filter 
+	request->init?						server start -> filter init 
+	request->service					request->doFilter	
+	shutdown->destroy 					shutdown -> destroy 
+
+
+------------------------------------------------------------------------
+
+
+Facebook.com 
+		Signup
+			fn ln em pwd 
+				submit ---->
+						read 
+						validation
+							true :->
+								db insert 
+							redirect Login --->
+-----------------------------------------------------------------------------								
+								
+
+database insert query using java -->
+
+JDBC -> 
+
+jdbc api -> 
+
+java.sql.* 
+
+java ---> sql ---> database 
+	1)open connection  --> Connection{interface} 
+	2)execute query    --> PreparedStatement {interface}
+	
+	
+java ---> db ---> connection open ---> Connection
+sql ---> query -> run ----> PreparedStatement 
+
+
+SQL-->
+
+Oralce , pg , mariadb ,mysql , microsoft sql server, 
+
+driver class -> lib 
+
+	
+how to get driver class? 
+	driver class -> vendor -> db provider 
+	mysql -> 
+	mysql + java + jdbc + driver 
+	and we will get link 
+	
+----------------------------------------------------------------------------	
+	When we add any jar we have to link that jar in build-path
+	
+	project -> right click -> java build path -> 
+	now click on libraries tab 
+	-> if classpath/module path then click on class path 
+	-> if not then ignore ->
+	-> now click on add jar -> browse -> project->webinf->lib->mysql-connector.jar->
+	-> now click on order and export tab -> 
+	-> select all -> apply and close 
+	
+-------------------------------------------------------------------------------	
+	
+	Connection open -> database 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	  
+	
+	
+	
+
+
+
+
 
 
 
