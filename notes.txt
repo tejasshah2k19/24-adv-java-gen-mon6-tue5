@@ -296,7 +296,13 @@ how to get driver class?
 	Connection open -> database 
 
 	
-	
+	create table products (
+		productId int primary key auto_increment,
+		category varchar(30),
+		price int,
+		qty int
+	);
+		
 	
 	
 	
