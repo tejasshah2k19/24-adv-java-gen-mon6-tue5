@@ -303,10 +303,16 @@ how to get driver class?
 		qty int
 	);
 		
+	alter table products add productName varchar(30);
 	
 	
+------------------------------------------------------
+
 	
-	
+	PreparedStatement 
+	query execute -> 
+	 		1) executeUpdate() : [ insert update delete ] 
+			2) executeQuery()  : [ select ]
 	
 	
 	

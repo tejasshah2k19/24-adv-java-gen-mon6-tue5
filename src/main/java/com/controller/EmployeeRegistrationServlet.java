@@ -10,13 +10,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/EmployeeRegistrationServlet")
-public class EmployeeRegistrationServlet extends HttpServlet{
+public class EmployeeRegistrationServlet extends HttpServlet {
 
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
-		
+	protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
 		System.out.println("EmployeeRegistrationServlet::service()");
+
+		// db insertion
 		RequestDispatcher rd = request.getRequestDispatcher("EmployeeLogin.jsp");
-		rd.forward(request, response);   
+		rd.forward(request, response);
 	}
 }
