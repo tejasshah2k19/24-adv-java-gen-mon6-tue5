@@ -29,11 +29,11 @@ public class ListProductServlet extends HttpServlet {
 			PreparedStatement pstmt = con.prepareStatement("select * from products");
 
 			ResultSet rs = pstmt.executeQuery();
+			//send rs to jsp 
+			request.setAttribute("rs", rs);
 			
-			while(rs.next()) {
-				String pName =rs.getString("productName");
-				System.out.println(pName);
-			}
+			//
+			request.getRequestDispatcher("ListProducts.jsp").forward(request, response);
 
 		} catch (Exception e) {
 			e.printStackTrace();

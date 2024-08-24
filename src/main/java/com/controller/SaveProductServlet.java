@@ -46,11 +46,14 @@ public class SaveProductServlet extends HttpServlet {
 
 			// run -> executeUpdate()
 			pstmt.executeUpdate();
+			
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
+		request.getRequestDispatcher("ListProductServlet").forward(request, response);
 		// bye
 	}
 }
