@@ -315,17 +315,62 @@ how to get driver class?
 			2) executeQuery()  : [ select ]
 	
 	
+---------------------------------------------------------
+
+table -> product remove 
+
+		delete 
+		
+		input : product name 
+		process : will remove that product from database 
+		output : list all products 
+			
+		delete from products where productName = ?
+		
+		1) InputProductName.jsp {productName} 
+		2) DeleteProductByNameServlet { remove } 
+		
+----------------------------------------------------------		 
+		
+		Local repo 
+		remote repo 
+		
+		push 
+		pull
+		
+		
+		computer -> local repo -> 
+		github.com -> remote repo -> 
+		
 	
 	
 	
 	
-	
-	
-	
-	
-	
+First Time :===>  	
+	  1) local repo -> git init
+	  2) remote repo -> github.com -> create repository  
 	  
+	  link your local repo with remote repo --> 
+	  git remote ----> 
+	  
+	  
+	  3 file 
+	  1 folder 
+	  
+	but i want to share / upload / push only 2 files and 1 folder 
 	
+	
+	git add git add Demo.java controller/ notes.txt 
+	
+	git commit -m "init" Demo.java controller/ notes.txt
+	
+	git push origin master 
+	
+	
+	if they ask for identity then we have to write 
+	[use your email and username ] 
+	git config --global user.email tejas@gmail.com 
+	git config --global user.name "Tejas"
 	
 	
 
