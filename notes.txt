@@ -372,7 +372,86 @@ First Time :===>
 	git config --global user.email tejas@gmail.com 
 	git config --global user.name "Tejas"
 	
+----------------------------------------------------------
+
+q:how to connect local repo and remote repo ?
+git remote add XXXXX 
+
+
+q:how to create local repo?
+git init 
+
+
+q:how to create remote repo?
+github.com -> new{create} -> repo -> 	
+
+i have two file in my local repo 
+	1) user.data.txt 
+	2) user.prfoile.data.txt 
 	
+now i want to add user.data.txt in git tracking for local repo? 
+
+git add user.data.txt -> adding this file into local repo 
+
+
+q:now i am done with user.data.txt and i want to upload this file to remote repo?
+git commit -m "user data" user.data.txt  
+git push origin master 
+
+
+q:how many times we have to call "git add user.data.txt" for user.data.txt?
+	1 file -> git add ? 
+ans:	 1 time 
+
+q:how many times we have to call "git commit" for user.data.txt?
+ans: when we want to push the code of user.data.txt we must have to do git commit 
+	or
+		when we update user.data.txt and now we want to upload to the remote-repo 
+		we have to call git commit for user.datatxt 
+
+q:  how to download remote repo 1st time in your computer ?
+ans: git clone 
+
+			
+-----------------------------------------------------------------------------
+fork
+branch   
+-----------------------------------------------------------------------------
+
+jsp
+servlet
+filter 
+jdbc : crud 
+lifecycle 
+
+
+inclusion : 
+session   :
+cookie    :  
+listener  :
+directrives: 
+EL		  : 
+JSTL 	  :
+config    :
+context   :
+
+-------------------------------------------------------------------------------------
+ 
+
+Reusable web component :>
+
+	inclusion -> you can include jsp file in another jsp file 
+	
+
+	inclusion -> two type :: 
+			1) static inclusion   : <%@include file=""%> 
+			2) dynamic inclusion  : <jsp:include page="" /> 
+			
+---------------------------------------------------------------------------------------			
+			
+		
+ 
+
 
 
 
