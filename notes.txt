@@ -450,8 +450,32 @@ Reusable web component :>
 ---------------------------------------------------------------------------------------			
 			
 		
+ Header.jsp -> 5 line 
+ Home.jsp -> 5 line 
  
+ Home.jsp -> include -> Header.jsp -> static 
+ 
+ 			Home.jsp { 5 + 5 } 10 line 
+ 
+ Home.jsp -> include -> Header.jsp -> dynamic 
+ 			Home.jsp { 5 + go and get output } 
+ 		
+ end result ->output->same 
+---------------------------------------------------------------------------------------
 
+information , information user 
+
+
+cookie -> storage -> information -> browser -> public 
+session -> storage -> information -> server -> private 
+
+
+otp 
+password
+cvv
+privacy security 
+ 
+-------------------------------------------------------------------------------------
 
 
 

@@ -7,19 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+FirstName => ${cookie.firstName.value}<br><br>
 
-<jsp:include page="Header.jsp"></jsp:include>
-
-<h2>Home</h2>
-<a href="Faq.jsp">Faq</a>
-|
-<a href="ContactUs.jsp">Contact</a>
-
-
-<%@include file="Footer.jsp" %>
-
-<%//=h %>
-<%=f %>
-
+	<a href="InputCookie.jsp">Input Cookie</a>
 </body>
 </html>
+
