@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-FirstName => ${cookie.firstName.value}<br><br>
-
-	<a href="InputCookie.jsp">Input Cookie</a>|
-	<a href="LogoutServlet">Logout</a>
+	<form action="AddSessionServlet" method="post">
+		FirstName : <input type="text" name="firstName"/><br><BR>
+		<input type="submit" value="Add Session"/> 
+		
+	</form>
 </body>
 </html>
-

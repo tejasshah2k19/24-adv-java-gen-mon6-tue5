@@ -477,8 +477,15 @@ privacy security
  
 -------------------------------------------------------------------------------------
 
+cookie -> expired -> time --> set -> 
+	by default 1 year -> 
+	2 days -> 
+	code? 
+	create -> 
 
+cookie -> destroy -> remove ? 
 
+Logout -> remove 
 
 
 
