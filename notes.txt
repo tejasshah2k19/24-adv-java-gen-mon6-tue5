@@ -518,7 +518,7 @@ storage ->
 					
 		service->
 			HttpSession session = request.getSession();
-			session.setTimeout(60*input);//second 					
+			session.setMaxInactiveInterval(60*input);//second 					
 			response.sendRedirect("InputSessionTimeout.jsp"); 
 
 
