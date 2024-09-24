@@ -486,11 +486,48 @@ cookie -> expired -> time --> set ->
 cookie -> destroy -> remove ? 
 
 Logout -> remove 
+-------------------------------------------------------------------------------------
+
+storage -> 
+
+		session---> server  
+		cookie ---> client : browser 
+		 
+	setMaxAge(0) -> destroy cookie 
+	invalidate() -> destroy session ->server memory  
+	Logout->invalidate() 
+	
+	user will not click on logout -> we want to destroy the session ? 
+		session -> timeout-> 
+				1) programming : java 
+				2) configuration : xml 
+	
+	
+	WEB-INF/web.xml 
+		<session-config>
+  			<session-timeout>5</session-timeout>
+  		</session-config>
+  
+	Programming -> 
+		InputSessionTimeout.jsp	
+			Timeout:	[  7  ]minutes
+					[submit] 
+	SessionTimeoutServlet				 
+				read input 
+				session->set->timeout->input 
+					
+		service->
+			HttpSession session = request.getSession();
+			session.setTimeout(60*input);//second 					
+			response.sendRedirect("InputSessionTimeout.jsp"); 
 
 
+	vidit -> 5 -> session destroy  
+	ayush -> 5 -> session destroy
+	dp -> 15 -> X -> X -> X -> session destroy
 
 
-
+----------------------------------------------------------------------------
 
 
 
