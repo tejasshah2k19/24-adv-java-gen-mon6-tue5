@@ -528,9 +528,61 @@ storage ->
 
 
 ----------------------------------------------------------------------------
+Listener-> listen -> events -> 
+	server start 
+	server stop 
+	request 
+	request completed 
+	session create 
+	session destroy 
+	XXXXX 
 
 
+share market -> share price -> NSE,BSE -> time->payment ->
 
+9.00 -> open connection -> 9 
+3.30 -> close connection -> 3.30 
+4.00 -> NSE BSE ? 
+
+server -> stop -> connection ? close -> 
+server -> start -> connection ? open -> 
+
+	listener -> listen -> start -> ? ? ? ? ?? ?? ? ? ->NSE open 
+	 				      stop  -> ? ? ? ? ? ? ? ? ? ->NSE Close  	
+	 
+1.AM -> DB SERVER STOP 
+8.30 AM -> DB SERVER START 
+
+6-7 time -> AWS -> 30*7 => 210$ -> 
+6-7 time -> AWS -> 30*7 => 210$ -> 
+6-7 time -> AWS -> 30*7 => 210$ -> 210*3 => 630$
+
+=630*80 => 50,400 
+
+1) server -> start stop
+	 
+------------------------------------------------------------
+listener -> events listen -> 
+		server start 
+		server stop 
+		session create 
+		request 
+		request -> setAttribute 	
+	 
+listener->steps -> 
+	1) class implements XXXListener
+	2) override -> method -> logic 
+	3) @WebListener	 
+
+--------------------------------------------------------
+
+
+user count-> online -> session -> 
+
+			cnt=0 
+listener -> created | destroyed
+			cnt++      cnt-- 
+---------------------------------------------------------	 
 
 
 
