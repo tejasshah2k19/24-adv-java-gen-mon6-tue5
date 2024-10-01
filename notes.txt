@@ -586,6 +586,11 @@ listener -> created | destroyed
 
 ----dummy---
 
+-------------------------------------------------------
+
+jsp -> session -> disable -> 
+
+logout -> Login.jsp -> session created 
 
 
 
