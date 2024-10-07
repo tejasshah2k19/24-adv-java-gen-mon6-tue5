@@ -593,6 +593,59 @@ jsp -> session -> disable ->
 logout -> Login.jsp -> session created 
 
 
+------------------------------------------------------------
+
+page directive 
+include directive 
+taglib directive 
+
+------------------------------------------------------------
+
+<b> 
+<i> 
+
+tags -> HTML 
+
+java -> tag -> JSTL -> java standard tag library -> 
+
+import -> lib -> jar -> project -> add 
+use -> 
+tags -> 
+1) core tag 
+2) sql
+3) 
+4)
+5)
+6)
+
+
+1) add lib / jar 
+2) import the lib -> into jsp -> taglib 
+3) use the tag using prefix 
+
+
+---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
